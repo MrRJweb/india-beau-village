@@ -1,0 +1,99 @@
+{
+  "business_name": "India Beau Village",
+  "researched": "2026-07-11",
+  "canonical_url": "https://indiabeauvillage.com",
+  "legacy_urls": [
+    "https://indiabeauvillagemontreal.com",
+    "https://restoindiabeauvillage.ca"
+  ],
+  "nap": {
+    "address": "640, rue Jarry Ouest, Montréal (Parc-Extension) QC H3N 1G2",
+    "phone": "+1-514-272-5847",
+    "metro": "Acadie",
+    "geo": {
+      "lat": 45.530884,
+      "lng": -73.63564
+    },
+    "google_place_id": "ChIJ2wLiqgYZyUwRs9xaQzEEtgk"
+  },
+  "hours": "Mon-Sun 11:00-24:00 (Google; online ordering closes ~22:20)",
+  "reputation": {
+    "google": {
+      "rating": 3.9,
+      "reviews": 2228
+    },
+    "ubereats": {
+      "rating": 4.4,
+      "reviews": "2000+"
+    },
+    "skipthedishes": {
+      "rating": 9.2
+    },
+    "restomontreal": {
+      "reviews": 580
+    }
+  },
+  "menu_verified": {
+    "total_items": 107,
+    "sections": 12,
+    "headline_groups": {
+      "agneau": 15,
+      "poulet": 20,
+      "fruits_de_mer": 9,
+      "vegetarien": 15
+    },
+    "headline_total": 59,
+    "price_source": "SkipTheDishes 2026-07 (platform prices; confirm in-store before launch)"
+  },
+  "order_links": {
+    "ubereats": "https://www.ubereats.com/ca/store/indian-beau-village-640-rue-jarry/Z01CiQ7zXYykprTs0-Y7PA",
+    "skipthedishes": "https://www.skipthedishes.com/india-beau-village-rue-jarry-o",
+    "doordash": "https://www.doordash.com/en-CA/store/india-beau-village-montreal-24800789/",
+    "direct_di_develop": "https://indiabeauvillagemontreal.com/"
+  },
+  "score": {
+    "copy_language": 6,
+    "visual_quality": 4,
+    "business_maturity": 15,
+    "site_sophistication": 3,
+    "brand_intentionality": 5,
+    "total": 33,
+    "tier_before": "Standard",
+    "tier_target": "Professional"
+  },
+  "old_site_defects": [
+    "'My Anchor' placeholder text x4",
+    "'HUBER' typo for Uber",
+    "Page named 'Menue'",
+    "Stock steak/skewer photos (non-Indian food)",
+    "Wrong postal code H3N 1G6 (correct: H3N 1G2)",
+    "Single-page anchor navigation, frozen since ~2018"
+  ],
+  "generated": {
+    "pages": [
+      "index.html",
+      "menu.html",
+      "a-propos.html",
+      "contact.html",
+      "en/index.html",
+      "en/menu.html",
+      "en/about.html",
+      "en/contact.html"
+    ],
+    "signature_element": "Le grand tableau — full menu as one filterable typeset board with data-computed counters",
+    "deployed_url": null,
+    "deploy_note": "Repo-root static site, GitHub Pages ready; deployment offered as follow-up (requires user approval)",
+    "photos": {
+      "source": "Restaurant's own gallery (Dec 5, 2024 shoot) hosted at portal.restodata.ca via its RestoMontreal listing",
+      "used": 9,
+      "available": 20,
+      "status": "hotlinked for immediate preview; run tools/localize-photos.sh to self-host before production; owner to confirm picks/captions"
+    },
+    "languages": {
+      "fr": "root",
+      "en": "/en/",
+      "hreflang": true,
+      "engine": "single site.js reads <html lang>; prices, board, tiles, chips, descriptions and Menu JSON-LD render per language from one menu-data.js"
+    }
+  }
+}

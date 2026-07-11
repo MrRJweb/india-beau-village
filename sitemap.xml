@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://indiabeauvillage.com/</loc><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://indiabeauvillage.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://indiabeauvillage.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indiabeauvillage.com/"/>
+  </url>
+  <url>
+    <loc>https://indiabeauvillage.com/menu.html</loc><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://indiabeauvillage.com/menu.html"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://indiabeauvillage.com/en/menu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indiabeauvillage.com/menu.html"/>
+  </url>
+  <url>
+    <loc>https://indiabeauvillage.com/a-propos.html</loc><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://indiabeauvillage.com/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://indiabeauvillage.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indiabeauvillage.com/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://indiabeauvillage.com/contact.html</loc><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://indiabeauvillage.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://indiabeauvillage.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indiabeauvillage.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://indiabeauvillage.com/en/</loc><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://indiabeauvillage.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://indiabeauvillage.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indiabeauvillage.com/"/>
+  </url>
+  <url>
+    <loc>https://indiabeauvillage.com/en/menu.html</loc><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://indiabeauvillage.com/menu.html"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://indiabeauvillage.com/en/menu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indiabeauvillage.com/menu.html"/>
+  </url>
+  <url>
+    <loc>https://indiabeauvillage.com/en/about.html</loc><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://indiabeauvillage.com/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://indiabeauvillage.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indiabeauvillage.com/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://indiabeauvillage.com/en/contact.html</loc><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://indiabeauvillage.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://indiabeauvillage.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://indiabeauvillage.com/contact.html"/>
+  </url>
+</urlset>

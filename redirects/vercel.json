@@ -1,0 +1,34 @@
+{
+  "redirects": [
+    { "source": "/(cart|login|registration|terms_and_conditions|privacy_policy)(/.*)?",
+      "has": [{ "type": "host", "value": "(www\\.)?indiabeauvillagemontreal\\.com" }],
+      "destination": "https://indiabeauvillage.com/", "permanent": true },
+    { "source": "/menu(/.*)?",
+      "has": [{ "type": "host", "value": "(www\\.)?indiabeauvillagemontreal\\.com" }],
+      "destination": "https://indiabeauvillage.com/menu.html", "permanent": true },
+    { "source": "/c/(.*)",
+      "has": [{ "type": "host", "value": "(www\\.)?indiabeauvillagemontreal\\.com" }],
+      "destination": "https://indiabeauvillage.com/menu.html", "permanent": true },
+    { "source": "/location(/.*)?",
+      "has": [{ "type": "host", "value": "(www\\.)?indiabeauvillagemontreal\\.com" }],
+      "destination": "https://indiabeauvillage.com/contact.html", "permanent": true },
+    { "source": "/reviews(/.*)?",
+      "has": [{ "type": "host", "value": "(www\\.)?indiabeauvillagemontreal\\.com" }],
+      "destination": "https://indiabeauvillage.com/a-propos.html", "permanent": true },
+    { "source": "/",
+      "has": [{ "type": "host", "value": "(www\\.)?indiabeauvillagemontreal\\.com" }],
+      "destination": "https://indiabeauvillage.com/", "permanent": true },
+    { "source": "/:path+",
+      "has": [{ "type": "host", "value": "(www\\.)?indiabeauvillagemontreal\\.com" }],
+      "destination": "https://indiabeauvillage.com/menu.html", "permanent": true },
+
+    { "source": "/(.*)",
+      "has": [{ "type": "host", "value": "(www\\.)?restoindiabeauvillage\\.ca" }],
+      "destination": "https://indiabeauvillage.com/", "permanent": true },
+
+    { "source": "/(Menue|menue)",
+      "destination": "/menu.html", "permanent": true },
+    { "source": "/franquias/(.*)",
+      "destination": "/", "permanent": true }
+  ]
+}

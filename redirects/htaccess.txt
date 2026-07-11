@@ -1,0 +1,44 @@
+# ============================================================
+# India Beau Village — règles 301 (Apache .htaccess)
+# Hypothèse : les 3 domaines sont parqués sur le même vhost.
+# Canonique : https://indiabeauvillage.com
+# Déposer ce fichier tel quel comme « .htaccess » à la racine.
+# ============================================================
+RewriteEngine On
+
+# ---- 0) HTTPS + apex sur le domaine canonique ----
+RewriteCond %{HTTP_HOST} ^www\.indiabeauvillage\.com$ [NC]
+RewriteRule ^(.*)$ https://indiabeauvillage.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^indiabeauvillage\.com$ [NC]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://indiabeauvillage.com/$1 [R=301,L]
+
+# ---- 1) indiabeauvillagemontreal.com (ancien système DI Develop) ----
+# Pages utilitaires → accueil
+RewriteCond %{HTTP_HOST} ^(www\.)?indiabeauvillagemontreal\.com$ [NC]
+RewriteRule ^(cart|login|registration|terms_and_conditions|privacy_policy)(/.*)?$ https://indiabeauvillage.com/ [R=301,L]
+# Contenu → équivalents
+RewriteCond %{HTTP_HOST} ^(www\.)?indiabeauvillagemontreal\.com$ [NC]
+RewriteRule ^menu(/.*)?$ https://indiabeauvillage.com/menu.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^(www\.)?indiabeauvillagemontreal\.com$ [NC]
+RewriteRule ^c(/.*)?$ https://indiabeauvillage.com/menu.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^(www\.)?indiabeauvillagemontreal\.com$ [NC]
+RewriteRule ^location(/.*)?$ https://indiabeauvillage.com/contact.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^(www\.)?indiabeauvillagemontreal\.com$ [NC]
+RewriteRule ^reviews(/.*)?$ https://indiabeauvillage.com/a-propos.html [R=301,L]
+# Racine → accueil
+RewriteCond %{HTTP_HOST} ^(www\.)?indiabeauvillagemontreal\.com$ [NC]
+RewriteRule ^$ https://indiabeauvillage.com/ [R=301,L]
+# Fiches produits à la racine (longue traîne) → le tableau
+RewriteCond %{HTTP_HOST} ^(www\.)?indiabeauvillagemontreal\.com$ [NC]
+RewriteRule ^.+$ https://indiabeauvillage.com/menu.html [R=301,L]
+
+# ---- 2) restoindiabeauvillage.ca (vitrine RestoMontreal, une page) ----
+RewriteCond %{HTTP_HOST} ^(www\.)?restoindiabeauvillage\.ca$ [NC]
+RewriteRule ^.*$ https://indiabeauvillage.com/ [R=301,L]
+
+# ---- 3) Chemins hérités sur le domaine canonique ----
+RewriteCond %{HTTP_HOST} ^indiabeauvillage\.com$ [NC]
+RewriteRule ^[Mm]enue/?$ /menu.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^indiabeauvillage\.com$ [NC]
+RewriteRule ^franquias(/.*)?$ / [R=301,L]

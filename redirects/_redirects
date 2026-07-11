@@ -1,0 +1,35 @@
+# ============================================================
+# India Beau Village — règles 301 (format Netlify / Cloudflare Pages)
+# Prérequis : les 3 domaines pointent (DNS) vers le même hébergement.
+# Canonique : https://indiabeauvillage.com
+# Ordre important : première règle correspondante gagne.
+# ============================================================
+
+# ---- indiabeauvillagemontreal.com (ancien système de commande DI Develop) ----
+# Pages utilitaires → accueil
+https://indiabeauvillagemontreal.com/cart/*                 https://indiabeauvillage.com/              301!
+https://indiabeauvillagemontreal.com/login/*                https://indiabeauvillage.com/              301!
+https://indiabeauvillagemontreal.com/registration/*         https://indiabeauvillage.com/              301!
+https://indiabeauvillagemontreal.com/terms_and_conditions/* https://indiabeauvillage.com/              301!
+https://indiabeauvillagemontreal.com/privacy_policy/*       https://indiabeauvillage.com/              301!
+# Pages de contenu → équivalents
+https://indiabeauvillagemontreal.com/menu/*                 https://indiabeauvillage.com/menu.html     301!
+https://indiabeauvillagemontreal.com/c/*                    https://indiabeauvillage.com/menu.html     301!
+https://indiabeauvillagemontreal.com/location/*             https://indiabeauvillage.com/contact.html  301!
+https://indiabeauvillagemontreal.com/reviews/*              https://indiabeauvillage.com/a-propos.html 301!
+https://indiabeauvillagemontreal.com/                       https://indiabeauvillage.com/              301!
+# Fiches produits à la racine (ex. /poulet-au-beurre-butter-chicken/) → le tableau
+https://indiabeauvillagemontreal.com/*                      https://indiabeauvillage.com/menu.html     301!
+# Variante www
+https://www.indiabeauvillagemontreal.com/*                  https://indiabeauvillage.com/menu.html     301!
+
+# ---- restoindiabeauvillage.ca (site vitrine RestoMontreal, une page) ----
+https://restoindiabeauvillage.ca/*                          https://indiabeauvillage.com/              301!
+https://www.restoindiabeauvillage.ca/*                      https://indiabeauvillage.com/              301!
+
+# ---- indiabeauvillage.com (domaine canonique) : chemins hérités ----
+/Menue        /menu.html   301
+/menue        /menu.html   301
+/franquias/*  /            301
+# (www→apex et http→https : activer la redirection de domaine principale
+#  dans les réglages Netlify/Cloudflare du domaine canonique.)
